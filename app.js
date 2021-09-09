@@ -18,7 +18,8 @@ newUser.addEventListener('submit', (e) => {
     const data = new FormData(newUser);
     const userData = {
         name: data.get('username'),
-        password: data.get('password')
+        password: data.get('password'),
+        todos: []
     };
 
 
