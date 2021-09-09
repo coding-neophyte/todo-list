@@ -1,4 +1,4 @@
-import { getTodos } from '../local-storage.js';
+import { completeTodos, getTodos } from '../local-storage.js';
 
 const ul = document.getElementById('todos');
 
@@ -16,6 +16,18 @@ export function renderTodos() {
         li.append(div, add);
         ul.append(li);
 
+
+        if (doList.completed === true) {
+            div.style.textDecoration = 'line-through';
+            add.disabled = true;
+        }
+        add.addEventListener('click', () => {
+            completeTodos(doList.id);
+
+            div.style.textDecoration = 'line-through';
+            add.disabled = true;
+
+        });
 
     }
 

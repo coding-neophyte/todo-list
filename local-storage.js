@@ -42,7 +42,9 @@ export function addTodos(newTodoItem) {
 
 export function completeTodos(id) {
     const pullTodos = getTodos();
-    const findTodo = USER.find(({ todo }) => todo.id === id);
+    console.log(pullTodos);
+    const findTodo = pullTodos.find((todo) => todo.id === id);
+
     findTodo.completed = true;
 
     setTodos(pullTodos);

@@ -37,7 +37,7 @@ existingUser.addEventListener('submit', (e) => {
 
 
 
-    const existing = getUser(user);
+    const existing = getUser() || {};
     const data = new FormData(existingUser);
     if (existing.name === data.get('username') && existing.password === data.get('password')) {
         window.location = '../todo/todo.html';
