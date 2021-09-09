@@ -3,6 +3,7 @@ import { renderTodos } from './render-utils.js';
 
 const toDo = getTodos();
 const submitTodo = document.getElementById('submit-todo');
+const signOut = document.getElementById('signout');
 
 renderTodos();
 
@@ -15,4 +16,8 @@ submitTodo.addEventListener('submit', (e) => {
 
 
 
+});
+
+signOut.addEventListener('click', () => {
+    window.location = '../index.html';
 });
