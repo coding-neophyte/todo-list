@@ -13,10 +13,14 @@ export function renderTodos() {
 
         add.textContent = 'Finished';
         div.textContent = doList.todo;
+        div.style.color = '#4267b2';
+        div.style.fontWeight = 'bold';
         li.append(div, add);
         ul.append(li);
-
-
+        // add.style.color = 'white';
+        // add.style.backgroundColor = '#4267b2';
+        // add.style.borderRadius = '5px';
+        // add.classList.add('finishedButton');
         if (doList.completed === true) {
             div.style.textDecoration = 'line-through';
             add.disabled = true;

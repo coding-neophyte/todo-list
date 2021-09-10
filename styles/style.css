@@ -114,4 +114,77 @@ footer {
 
   h1{
     font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bolder;
+    color: #4267b2;
   }
+
+  p{
+    text-align: center;
+    color: #4267b2;
+    /* background-color: black; */
+}
+
+#submit-todo{
+    text-align: center;
+    margin-top: 10px;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+#signout {
+    background-color: #4267b2;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    height: 10%;
+    margin-left: 5%;
+    /* margin-bottom: 5%; */
+}
+
+#signup{
+    background-color: #4267b2;
+    border-color: #4267b2;
+    color: white;
+    border-radius: 10px;
+}
+
+#login{
+    background-color: #4267b2;
+    border-color: #4267b2;
+    color: white;
+    border-radius: 10px;
+
+}
+
+#login:hover{
+  background-color: white;
+  color: #4267b2;
+}
+
+#signup:hover{
+background-color: white;
+  color: #4267b2;
+}
+
+label{
+    color: #4267b2;
+    font-weight: bold;
+}
+
+#adding{
+   background-color:#4267b2;
+   color: white;
+   border-color:#4267b2;
+   border-radius: 10px;
+}
+
+/* .finishedButton {
+   background-color:#4267b2;
+   color: white;
+   border-color:#4267b2;
+   border-radius: 5px;
+} */
