@@ -24,7 +24,7 @@ newUser.addEventListener('submit', (e) => {
 
 
     setUser(userData);
-    window.location = '../todo/todo.html';
+    window.location = './todo/todo.html';
 
 
 
@@ -40,7 +40,7 @@ existingUser.addEventListener('submit', (e) => {
     const existing = getUser() || {};
     const data = new FormData(existingUser);
     if (existing.name === data.get('username') && existing.password === data.get('password')) {
-        window.location = '../todo/todo.html';
+        window.location = './todo/todo.html';
     } else {
         alert('error wrong username or password combination');
     }
